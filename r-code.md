@@ -1,5 +1,7 @@
 # R Code
 
+### [back to home](index.md)
+
 In R Studio, start a new R script.  It may be helpful to change the Renviron file directly, in case the program has difficulty accessing the packages you have downloaded:
 ```
 write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
