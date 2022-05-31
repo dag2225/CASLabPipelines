@@ -9,7 +9,7 @@ In R Studio, start a new R script.  It may be helpful to change the Renviron fil
 write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
 ```
 
-First, you will have to load in your gene counts file (more information on how to format that [here]).  Keep in mind that the file path may differ slightly for Mac (this code was written on a PC):
+First, you will have to load in your gene counts file (more information on how to format that [here](file_formats.md).  Keep in mind that the file path may differ slightly for Mac (this code was written on a PC):
 ```
 mouse_counts <- file.path("C:", "Users", "Devin", "Desktop", "mouse_counts.csv", fsep="/")
 file.exists(mouse_counts) # Helpful for debugging to check if you are in the right location
@@ -17,7 +17,7 @@ cts <- as.matrix(read.csv(mouse_counts,sep=",",row.names=1)) # Convert to matrix
 cts # This just prints the matrix
 ```
 
-Then, you will have to load in your annotations file (more information on how to format that [here]).
+Then, you will have to load in your annotations file (more information on how to format that [here](file_formats.md).
 ```
 mouse_anno <- file.path("C:", "Users", "steel", "Desktop", "mouse_anno.txt", fsep="/")
 coldata <- read.csv(mouse_anno, sep="\t") # Read as CSV file
