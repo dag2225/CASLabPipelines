@@ -1,5 +1,7 @@
 # R Code
 
+Credit to Alex Chui, Alex Papachristodoulou, Devin Golla, and others
+
 ### [back to home](index.md)
 
 In R Studio, start a new R script.  It may be helpful to change the Renviron file directly, in case the program has difficulty accessing the packages you have downloaded:
