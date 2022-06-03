@@ -39,18 +39,22 @@ Gene sets will be in the file format .gmt, and can be downloaded from [this link
 ## Step 2 - Run GSEA
 
 ### "Expression dataset"
+Select the correctly formatted .gct file from your loaded data.
 
 ### "Gene sets database"
+Select geneset file that was downloaded from file, or select geneset file from those provided.
 
 ### "Number of Permutations"
 This can be left at the default value of 1000, unless otherwise directed.
 
 ### "Phenotype labels"
+Select .cls file from your loaded data.
 
 ### "Collapse/Remap to gene symbols"
 Choose "No_Collapse" option, which is the only option that will work without specifying a chip platform.  These settings work because of the data that will be fed into the program, which comes from counts files that already have much of the raw data processed.
 
 ### "Permutation type"
+Leave the default option, "phenotype".
 
 ### "Chip platform"
 This can be left alone, unless otherwise directed.
