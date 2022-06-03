@@ -18,6 +18,8 @@ gene1             1 0 0 0 0 23 24 35 65 24
 ```
 Note that here, 38160 is the number of rows (genes) in the file, and 10 is the number of classes, which are each listed as their own columns.
 Also note that if a geneset file ending in ".symbols.gmt" is used for this analysis, and the DESeq2 output lists genes by their numeric gene ID, a conversion needs to take place before analysis can occur - a list of gene names from gene IDs can be obtained using the Ensembl Biomart tool, [here](https://www.ensembl.org/biomart/martview/f72f154b2e4ce299357c02ca7f720a5a).  
+
+Biomart instructions:
 - Click "New" in the top left corner, then select the correct organism
 - Input your list of gene ID's in the text box under "Filters" tab, then "GENE" heading.  Also, check this checkbox.
 - Under "Attributes" tab, "GENE" heading, ensure that "Gene stable ID" and "Gene name" are checked.
